@@ -4,9 +4,9 @@
 
 De Urgență [was prototyped](https://civiclabs.ro/ro/solutions/stay-together) in [Code for Romania](https://code4.ro/ro)'s research project, [Civic Labs](https://civiclabs.ro/ro).
 
-The application aims to inform citizens about how to react to the first critical hours in a crysis situation (like that of an earthquake). 
+The application aims to inform citizens about how to react to the first critical hours in a crysis situation (like that of an earthquake).
 
-It also aims to build healthy habits that become ingrained with time, so that, when the critical moment arrives, each person knows what the key first steps to keeping themselves safe are. 
+It also aims to build healthy habits that become ingrained with time, so that, when the critical moment arrives, each person knows what the key first steps to keeping themselves safe are.
 
 [See the project live](insert_link_here)
 
@@ -18,11 +18,15 @@ This project is built by amazing volunteers and you can be one of them! Here's a
 
 Help us out by testing this project in the [staging environment](INSERT_LINK_HERE). If you see something that doesn't quite work the way you expect it to, open an Issue. Make sure to describe what you _expect to happen_ and _what is actually happening_ in detail.
 
-If you would like to suggest new functionality, open an Issue and mark it as a __[Feature request]__. Please be specific about why you think this functionality will be of use. If you can, please include some visual description of what you would like the UI to look like, if you are suggesting new UI elements. 
+If you would like to suggest new functionality, open an Issue and mark it as a **[Feature request]**. Please be specific about why you think this functionality will be of use. If you can, please include some visual description of what you would like the UI to look like, if you are suggesting new UI elements.
 
 ### Programming languages
 
-Nuxt (Vue)
+Javascript
+
+### Frontend framework
+
+Nuxt
 
 ### Platforms
 
@@ -30,31 +34,38 @@ Web
 
 ### Package managers
 
-### Database technology & provider
+Yarn
 
 ## Repos and projects
 
-[Android repo](https://github.com/code4romania/de-urgenta-android)   
-[iOS repo](https://github.com/code4romania/de-urgenta-ios)   
-[Web app - frontend](https://github.com/code4romania/de-urgenta-client)   
+[Android repo](https://github.com/code4romania/de-urgenta-android)  
+[iOS repo](https://github.com/code4romania/de-urgenta-ios)  
+[Web app - frontend](https://github.com/code4romania/de-urgenta-client)  
 [Web app - backend](https://github.com/code4romania/de-urgenta-backend)
+
+### Build Setup
+
+```bash
+# install dependencies
+$ yarn
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# generate static project
+$ yarn build
+```
 
 ## Deployment
 
-Guide users through getting your code up and running on their own system. In this section you can talk about:
-1. Installation process
-2. Software dependencies
-3. Latest releases
-4. API references
-
-Describe and show how to build your code and run the tests.
+Github integration with [Vercel](https://vercel.com)
 
 ## Feedback
 
-* Request a new feature on GitHub.
-* Vote for popular feature requests.
-* File a bug in GitHub Issues.
-* Email us with other feedback contact@code4.ro
+- Request a new feature on GitHub.
+- Vote for popular feature requests.
+- File a bug in GitHub Issues.
+- Email us with other feedback contact@code4.ro
 
 ## License
 
