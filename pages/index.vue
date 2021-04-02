@@ -88,6 +88,9 @@
           button="Vezi toate cursurile"
         />
       </section>
+      <section class="container mx-auto px-5 mt-10 md:mt-16">
+        <Card class="ml-auto md:w-1/2" />
+      </section>
     </main>
   </div>
 </template>
