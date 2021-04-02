@@ -9,5 +9,6 @@
         pwp."
       />
     </section>
+    <Feature />
   </div>
 </template>
