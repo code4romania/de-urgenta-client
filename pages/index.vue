@@ -95,5 +95,6 @@
         </div>
       </section>
     </main>
+    <Footer />
   </div>
 </template>
