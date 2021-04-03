@@ -2,7 +2,7 @@
   <div
     class="flex flex-col-reverse md:flex-row shadow-md rounded-xl p-5 lg:p-10 bg-white"
   >
-    <div>
+    <div class="mt-10 md:mt-0">
       <h2 class="text-4xl font-bold">{{ title }}</h2>
       <p class="mt-2.5 text-gray-500">
         {{ description }}
