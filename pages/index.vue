@@ -95,6 +95,6 @@
         </div>
       </section>
     </main>
-    <Footer />
+    <Footer class="bg-gray-50 py-10 md:py-16" />
   </div>
 </template>

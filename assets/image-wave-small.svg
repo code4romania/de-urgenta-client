@@ -1,5 +1,4 @@
-<template>
-  <svg
+ <svg
     width="377"
     height="77"
     viewBox="0 0 377 77"
@@ -377,4 +376,3 @@
       </linearGradient>
     </defs>
   </svg>
-</template>

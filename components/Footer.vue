@@ -1,15 +1,21 @@
 <template>
   <footer>
-    <WaveSmall class="w-full h-auto mb-10 md:hidden" />
-    <WaveLarge class="w-full h-auto mb-16 hidden md:block" />
+    <img
+      src="~assets/image-wave-small.svg"
+      class="w-full h-auto mb-10 md:hidden"
+    />
+    <img
+      src="~assets/image-wave-large.svg"
+      class="w-full h-auto mb-16 hidden md:block"
+    />
     <div
       class="container mx-auto px-4 text-gray-600 flex justify-between flex-col md:flex-row-reverse"
     >
       <div>
         <div class="text-xl font-bold md:text-right">Descarcă aplicația</div>
         <div class="flex space-x-4 mt-2.5 md:justify-end">
-          <a href="#"><LogoDownloadApple /></a>
-          <a href="#"><LogoDownloadAndroid /></a>
+          <a href="#"><img src="~assets/logo-download-ios.svg" /></a>
+          <a href="#"><img src="~assets/logo-download-android.svg" /></a>
         </div>
         <div
           class="font-bold flex justify-between items-center flex-wrap md:flex-nowrap mt-5 md:mt-10"
@@ -29,7 +35,7 @@
       <div class="max-w-xs text-xs">
         <div class="font-courier mt-8 md:mt-0">
           Un proiect
-          <LogoCode4Ro class="mt-3 mb-3 w-32 h-auto" />
+          <img src="~assets/logo-code4ro.svg" class="mt-3 mb-3 w-32" />
           Organizație independentă, non-partizană, apolitică,
           non-guvernamentală.
         </div>
