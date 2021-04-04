@@ -3,14 +3,14 @@
     class="flex flex-col lg:flex-row bg-white shadow-md rounded-xl p-5 lg:p-10"
   >
     <div>
-      <div class="text-4xl font-bold">
+      <h2 class="text-4xl font-bold">
         Esti autor de cursuri de prim ajutor? Do something
-      </div>
-      <div class="mt-7 text-gray-500">
+      </h2>
+      <p class="mt-7 text-gray-500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex
         obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil
         quod quibusdam expedita nemo.
-      </div>
+      </p>
       <div class="mt-7">
         <a
           href="#"
