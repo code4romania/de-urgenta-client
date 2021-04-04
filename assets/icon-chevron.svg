@@ -1,4 +1,3 @@
-<template>
   <svg
     width="9"
     height="16"
@@ -14,4 +13,3 @@
       stroke-linejoin="round"
     />
   </svg>
-</template>

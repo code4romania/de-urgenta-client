@@ -1,5 +1,4 @@
-<template>
-  <svg
+ <svg
     width="17"
     height="14"
     viewBox="0 0 17 14"
@@ -14,4 +13,3 @@
       stroke-linejoin="round"
     />
   </svg>
-</template>
