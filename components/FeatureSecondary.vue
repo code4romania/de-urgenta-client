@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="flex flex-col-reverse md:flex-row shadow-md rounded-xl p-5 lg:p-10 bg-white"
-  >
-    <div class="mt-10 md:mt-0">
+  <div class="flex flex-col md:flex-row-reverse items-center">
+    <div class="md:w-1/2">
       <h2 class="text-4xl font-bold">{{ title }}</h2>
       <p class="mt-2.5 text-gray-500">
         {{ description }}
@@ -17,8 +15,8 @@
         />
       </div>
     </div>
-    <div class="flex-shrink-0">
-      <img class="m-auto md:ml-20" :src="require(`~/assets/` + image)" />
+    <div class="max-w-md mx-auto mt-12">
+      <img :src="require(`~/assets/` + image)" class="p-6" />
     </div>
   </div>
 </template>

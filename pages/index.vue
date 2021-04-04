@@ -35,6 +35,27 @@
           ]"
         />
       </section>
+      <section class="container mx-auto px-5 mt-10 md:mt-16">
+        <FeatureSecondary
+          title="Always in the loop"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
+          image="image-feature-secondary.svg"
+          :list="[
+            {
+              icon: 'icon-annotation.svg',
+              title: 'Competitive exchange rates',
+              content:
+                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            },
+            {
+              icon: 'icon-mail.svg',
+              title: 'No hidden fees',
+              content:
+                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            },
+          ]"
+        />
+      </section>
     </main>
   </div>
 </template>
