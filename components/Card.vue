@@ -15,12 +15,12 @@
           class="inline-block bg-red-500 hover:bg-red-600 text-white p-2.5 pl-12 pr-12 rounded-md"
         >
           <span>{{ button }}</span>
-          <IconArrow class="inline-block" />
+          <img src="~/assets/icon-arrow.svg" class="inline-block" />
         </a>
       </div>
     </div>
-    <div class="pt-8 lg:pt-0">
-      <IconCreators />
+    <div class="flex-shrink-0 lg:pt-0">
+      <img src="~/assets/image-creators.svg" />
     </div>
   </div>
 </template>

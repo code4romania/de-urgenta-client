@@ -1,4 +1,3 @@
-<template>
   <svg
     width="242"
     height="242"
@@ -368,4 +367,3 @@
       stroke-miterlimit="10"
     />
   </svg>
-</template>
