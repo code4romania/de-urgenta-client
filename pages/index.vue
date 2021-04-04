@@ -87,9 +87,12 @@
           ]"
           button="Vezi toate cursurile"
         />
-      </section>
-      <section class="container mx-auto px-5 mt-10 md:mt-16">
-        <Card class="ml-auto md:w-1/2" />
+        <Card
+          class="ml-auto md:w-1/2"
+          title="Esti autor de cursuri de prim ajutor? Do something"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
+          button="Call to action pt creatori"
+        />
       </section>
     </main>
   </div>
