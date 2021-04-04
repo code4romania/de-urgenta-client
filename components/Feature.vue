@@ -7,20 +7,14 @@
       <p class="mt-2.5 text-gray-500">
         {{ description }}
       </p>
-      <div v-for="(item, index) in list" :key="index" class="space-y-9 mt-10">
-        <div class="flex">
-          <div>
-            <div class="bg-red-500 rounded p-2 mr-5 w-8 h-8">
-              <img :src="require(`~/assets/` + item.icon)" />
-            </div>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold">{{ item.title }}</h3>
-            <p class="text-gray-500 pt-1.5">
-              {{ item.content }}
-            </p>
-          </div>
-        </div>
+      <div class="space-y-9 mt-10">
+        <ListItem
+          v-for="(item, index) in list"
+          :key="index"
+          :title="item.title"
+          :content="item.content"
+          :icon="item.icon"
+        />
       </div>
     </div>
     <div class="flex-shrink-0">

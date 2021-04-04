@@ -5,24 +5,18 @@
       <p class="mt-2.5 text-gray-500">
         {{ description }}
       </p>
-      <div v-for="(item, index) in list" :key="index" class="space-y-9 mt-10">
-        <div class="flex">
-          <div>
-            <div class="bg-red-500 rounded w-8 h-8 p-2 mr-5">
-              <img :src="require(`~/assets/` + item.icon)" />
-            </div>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold">{{ item.title }}</h3>
-            <p class="text-gray-500 pt-1.5">
-              {{ item.content }}
-            </p>
-          </div>
-        </div>
+      <div class="space-y-9 mt-10">
+        <ListItem
+          v-for="(item, index) in list"
+          :key="index"
+          :title="item.title"
+          :content="item.content"
+          :icon="item.icon"
+        />
       </div>
     </div>
-    <div class="mt-12 md:w-1/2">
-      <img :src="require(`~/assets/` + image)" class="m-auto" />
+    <div class="max-w-md mx-auto mt-12">
+      <img :src="require(`~/assets/` + image)" class="p-6" />
     </div>
   </div>
 </template>
