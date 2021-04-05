@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 class="text-4xl font-bold">{{ title }}</h2>
-    <p class="mt-2.5 text-gray-500">{{ description }}</p>
+    <h2 v-if="title" class="text-4xl font-bold">{{ title }}</h2>
+    <p v-if="description" class="mt-2.5 text-gray-500">{{ description }}</p>
     <div class="mt-5 space-y-5">
       <div
         v-for="(item, x) in list"
@@ -42,11 +42,11 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      default: null,
     },
     description: {
       type: String,
-      required: true,
+      default: null,
     },
     list: {
       type: Array,
