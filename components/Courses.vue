@@ -26,13 +26,13 @@
       </div>
     </div>
     <div class="mt-10">
-      <a
-        href="#"
+      <router-link
+        to="/courses"
         class="inline-block bg-red-500 hover:bg-red-600 text-white p-2.5 pl-12 pr-12 rounded-md"
       >
         <span>{{ button }}</span>
         <img src="~/assets/icon-arrow.svg" class="inline-block ml-2.5" />
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

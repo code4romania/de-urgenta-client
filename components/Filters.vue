@@ -2,6 +2,7 @@
   <div class="space-y-6">
     <div class="text-xl text-gray-800 font-bold">Filtreaza cursurile</div>
     <ButtonGroup
+      class="bg-white"
       :data="dates"
       :value="selectedDate"
       @valueSelect="onDateSelect"
