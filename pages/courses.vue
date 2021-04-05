@@ -14,19 +14,7 @@
           class="flex flex-col md:flex-row space-y-16 md:space-x-16 md:space-y-0"
         >
           <div class="md:w-2/6">
-            <div class="text-xl text-gray-800 font-bold">
-              Filtreaza cursurile
-            </div>
-            <ButtonGroup :values="filters" :initial-value="filters[2]" />
-            <Select
-              v-model="selectedWrestler"
-              :data="types"
-              class="mt-6"
-              @valueSelect="onValueSelect"
-              ><div>Filtreaza</div></Select
-            >
-            <Select :data="['1', '2']" class="mt-7" />
-
+            <Filters />
             <Card
               class="flex-wrap mt-16 md:mt-32"
               title="Esti autor de cursuri de prim ajutor? Do something"
@@ -134,14 +122,3 @@
     <Footer class="bg-gray-50 py-10 md:py-16" />
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      filters: ['Saptamana asta', 'Luna asta', 'Toate rezultatele'],
-      types: ['prim ajutor', 'second ajutor', 'third ajutor'],
-    }
-  },
-}
-</script>

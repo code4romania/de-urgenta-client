@@ -14,15 +14,10 @@
           aria-haspopup="listbox"
           aria-expanded="true"
           aria-labelledby="listbox-label"
-          class="cursor-pointer relative w-full rounded-md border border-gray-300 bg-white pl-3 pr-10 py-2 text-left focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+          class="cursor-pointer relative w-full rounded-md border border-gray-300 bg-white pl-5 pr-10 py-2 text-left focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
           @click="openDropdown"
         >
           <div class="flex items-center space-x-3">
-            <img
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-              class="flex-shrink-0 h-6 w-6 rounded-full"
-            />
             <span class="block truncate">
               {{ value }}
             </span>
@@ -50,7 +45,7 @@
       <!-- Select popover, show/hide based on select state. -->
       <div
         v-show="isOpen"
-        class="absolute mt-1 w-full rounded-md bg-white shadow-lg"
+        class="absolute z-10 mt-1 w-full rounded-md bg-white shadow-lg"
       >
         <ul
           tabindex="-1"
@@ -73,14 +68,9 @@
             @click="select(d)"
           >
             <div class="flex items-center space-x-3">
-              <img
-                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                alt=""
-                class="flex-shrink-0 h-6 w-6 rounded-full"
-              />
               <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
               <span
-                class="block truncate"
+                class="block truncate pl-5"
                 :class="{
                   'font-normal': !isSelected(d),
                   'font-semibold': isSelected(d),
@@ -118,13 +108,18 @@
 <script>
 import ClickOutside from 'vue-click-outside'
 export default {
-  name: 'VueSelect',
   directives: {
     ClickOutside,
   },
   props: {
-    data: Array,
-    value: String,
+    data: {
+      type: Array,
+      required: true,
+    },
+    value: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {
