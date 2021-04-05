@@ -44,4 +44,8 @@ export default {
   tailwindcss: {
     jit: true,
   },
+
+  server: {
+    host: '0' // default: localhost
+  }
 }
