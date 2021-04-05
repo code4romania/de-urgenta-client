@@ -6,7 +6,7 @@
     <p class="text-xl mt-8">
       {{ description }}
     </p>
-    <div class="flex justify-center space-x-5 mt-8">
+    <div v-if="showButtons" class="flex justify-center space-x-5 mt-8">
       <a href="#"><img src="~assets/logo-download-ios.svg" /></a>
       <a href="#"><img src="~assets/logo-download-android.svg" /></a>
     </div>
@@ -22,6 +22,9 @@ export default {
     description: {
       type: String,
       required: true,
+    },
+    showButtons: {
+      type: Boolean,
     },
   },
 }
