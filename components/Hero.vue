@@ -3,7 +3,7 @@
     <h1 class="text-4xl text-gray-800 font-bold md:text-5xl">
       {{ title }}
     </h1>
-    <p class="text-xl mt-8">
+    <p v-if="description" class="text-xl mt-8">
       {{ description }}
     </p>
     <div v-if="showButtons" class="flex justify-center space-x-5 mt-8">
@@ -21,7 +21,7 @@ export default {
     },
     description: {
       type: String,
-      required: true,
+      default: null,
     },
     showButtons: {
       type: Boolean,
