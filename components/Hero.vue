@@ -10,6 +10,9 @@
       <a href="#"><img src="~assets/logo-download-ios.svg" /></a>
       <a href="#"><img src="~assets/logo-download-android.svg" /></a>
     </div>
+    <p v-if="footer" class="text-sm text-gray-600 mt-8">
+      {{ footer }}
+    </p>
   </div>
 </template>
 <script>
@@ -25,6 +28,10 @@ export default {
     },
     showButtons: {
       type: Boolean,
+    },
+    footer: {
+      type: String,
+      default: null,
     },
   },
 }
