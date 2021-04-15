@@ -3,9 +3,10 @@
     <h2 v-if="title" class="text-4xl font-bold">{{ title }}</h2>
     <p v-if="description" class="mt-2.5 text-gray-500">{{ description }}</p>
     <div class="mt-5 space-y-5">
-      <div
+      <router-link
         v-for="(item, x) in list"
         :key="x"
+        :to="`/courses/${item.slug}`"
         class="flex items-center cursor-pointer"
       >
         <div
@@ -23,7 +24,7 @@
         <div class="ml-auto">
           <img src="~/assets/icon-chevron.svg" />
         </div>
-      </div>
+      </router-link>
     </div>
     <div class="mt-10">
       <router-link
