@@ -1,6 +1,7 @@
 <template>
   <div class="shadow">
     <nav
+      v-click-outside="closeMenu"
       class="container flex flex-col items-center justify-between m-auto md:flex-row md:px-8"
     >
       <div class="w-full md:w-auto flex flex-row items-center justify-between">
@@ -26,15 +27,27 @@
 </template>
 
 <script>
+import ClickOutside from 'vue-click-outside'
 export default {
+  directives: {
+    ClickOutside,
+  },
   data() {
     return {
       menuVisible: false,
     }
   },
+  watch: {
+    $route() {
+      this.menuVisible = false
+    },
+  },
   methods: {
     toggleMenu() {
       this.menuVisible = !this.menuVisible
+    },
+    closeMenu() {
+      this.menuVisible = false
     },
   },
 }
