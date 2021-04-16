@@ -4,7 +4,7 @@
       <Hero :title="title" :description="description" />
     </section>
     <section class="container mx-auto px-5 pt-10 md:pt-16">
-      <div class="grid grid-cols-3 gap-5">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
         <CardInfo
           v-for="(item, index) in list"
           :id="item.id"
