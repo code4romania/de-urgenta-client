@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_ui_courses",
+  "info": {
+    "name": "courses",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.button"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.card"
+    }
+  }
+}

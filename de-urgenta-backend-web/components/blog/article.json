@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blog_articles",
+  "info": {
+    "name": "article",
+    "icon": "envelope-open-text"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
