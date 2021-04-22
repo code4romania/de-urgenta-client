@@ -2,16 +2,16 @@
   <main>
     <section class="container mx-auto px-5 pt-10 md:pt-16">
       <Hero
-        title="Aici ar veni un header catchy pentru download singura aplicatie care"
-        description="Aici ar fi un alt text care sa imputerniceasca ce zice textul de mai sus si sa complementeze call to action-ul pentru downloading-ul aplicatiei. pwp."
-        show-buttons
+        :title="data.main[0].title"
+        :description="data.main[0].description"
+        :show-buttons="data.main[0].showButtons"
       />
     </section>
     <section class="container mx-auto px-5 mt-10 md:mt-16">
       <Feature
-        title="Transfer funds world-wide"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit."
-        image="image-feature.svg"
+        :title="data.main[1].title"
+        :description="data.main[1].description"
+        :image="data.main[1].image"
         :list="[
           {
             icon: 'icon-world.svg',
@@ -36,9 +36,9 @@
     </section>
     <section class="container mx-auto px-5 mt-10 md:mt-16">
       <FeatureSecondary
-        title="Always in the loop"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
-        image="image-feature-secondary.svg"
+        :title="data.main[2].title"
+        :description="data.main[2].description"
+        :image="data.main[2].image"
         :list="[
           {
             icon: 'icon-annotation.svg',
@@ -58,8 +58,8 @@
     <section class="container mx-auto px-5 mt-10 md:mt-16">
       <div class="grid md:grid-cols-2 gap-10">
         <Courses
-          title="Cursuri de prima ajutor"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
+          :title="data.main[3].title"
+          :description="data.main[3].description"
           :list="[
             {
               slug: '021-04-06',
@@ -87,14 +87,24 @@
               subtitle: 'Crucea Roșie - Filiala Sector 6',
             },
           ]"
-          button="Vezi toate cursurile"
+          :button="data.main[3].button"
         />
         <Card
-          title="Esti autor de cursuri de prim ajutor? Do something"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
-          button="Call to action pt creatori"
+          :title="data.main[3].card.title"
+          :description="data.main[3].card.description"
+          :image="data.main[3].card.image"
+          :button-text="data.main[3].card.buttonText"
+          :button-href="data.main[3].card.buttonHref"
         />
       </div>
     </section>
   </main>
 </template>
+<script>
+export default {
+  async asyncData({ $strapi }) {
+    const [page] = await $strapi.$pages.find({ slug: 'home' })
+    return { data: page }
+  },
+}
+</script>

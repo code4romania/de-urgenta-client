@@ -11,16 +11,16 @@
       </p>
       <div class="mt-7">
         <a
-          href="#"
+          :href="buttonHref"
           class="inline-block bg-red-500 hover:bg-red-600 text-white p-2.5 pl-12 pr-12 rounded-md"
         >
-          <span>{{ button }}</span>
+          <span>{{ buttonText }}</span>
           <img src="~/assets/icon-arrow.svg" class="inline-block" />
         </a>
       </div>
     </div>
     <div class="flex-shrink-0 lg:pt-0">
-      <img src="~/assets/image-creators.svg" />
+      <Media :src="image.url" />
     </div>
   </div>
 </template>
@@ -36,7 +36,15 @@ export default {
       type: String,
       required: true,
     },
-    button: {
+    image: {
+      type: Object,
+      required: true,
+    },
+    buttonText: {
+      type: String,
+      required: true,
+    },
+    buttonHref: {
       type: String,
       required: true,
     },

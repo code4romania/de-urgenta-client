@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="max-w-md mx-auto mt-12">
-      <img :src="require(`~/assets/` + image)" class="p-6" />
+      <Media v-if="image.url" :src="image.url" class="p-6" />
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ export default {
       required: true,
     },
     image: {
-      type: String,
+      type: Object,
       required: true,
     },
     list: {

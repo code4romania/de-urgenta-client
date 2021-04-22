@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="flex-shrink-0">
-      <img class="m-auto md:ml-20" :src="require(`~/assets/` + image)" />
+      <Media v-if="image.url" class-name="m-auto md:ml-20" :src="image.url" />
     </div>
   </div>
 </template>
@@ -35,7 +35,7 @@ export default {
       required: true,
     },
     image: {
-      type: String,
+      type: Object,
       required: true,
     },
     list: {

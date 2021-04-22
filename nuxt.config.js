@@ -2,6 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  env: {
+    strapiBaseUri: process.env.API_URL || 'http://localhost:1337',
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'de-urgenta',
@@ -36,12 +40,16 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/strapi'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
   tailwindcss: {
     jit: true,
+  },
+
+  strapi: {
+    entities: ['pages'],
   },
 }
