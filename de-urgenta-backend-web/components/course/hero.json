@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_course_heroes",
+  "info": {
+    "name": "hero",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

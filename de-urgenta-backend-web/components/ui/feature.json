@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_ui_features",
+  "info": {
+    "name": "feature",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.list-item"
+    }
+  }
+}

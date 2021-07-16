@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_providers",
+  "info": {
+    "name": "Course Provider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

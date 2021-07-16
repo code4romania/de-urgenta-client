@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_pages",
+  "info": {
+    "name": "Course Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.head"
+    },
+    "main": {
+      "type": "dynamiczone",
+      "components": [
+        "course.hero",
+        "course.article"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "de-urgenta-backend-web",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.6.0",
+    "strapi-admin": "3.6.0",
+    "strapi-utils": "3.6.0",
+    "strapi-plugin-content-type-builder": "3.6.0",
+    "strapi-plugin-content-manager": "3.6.0",
+    "strapi-plugin-users-permissions": "3.6.0",
+    "strapi-plugin-email": "3.6.0",
+    "strapi-plugin-upload": "3.6.0",
+    "strapi-plugin-i18n": "3.6.0",
+    "strapi-connector-bookshelf": "3.6.0",
+    "knex": "0.21.18",
+    "sqlite3": "5.0.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "659d0da4-7c2a-4db3-8b7c-8e10bb8e7b12"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

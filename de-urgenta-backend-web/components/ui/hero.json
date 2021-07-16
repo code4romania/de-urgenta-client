@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_ui_heroes",
+  "info": {
+    "name": "hero",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showButtons": {
+      "type": "boolean"
+    }
+  }
+}

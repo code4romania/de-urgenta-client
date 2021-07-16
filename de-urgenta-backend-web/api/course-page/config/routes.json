@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/course-pages",
+      "handler": "course-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/course-pages/count",
+      "handler": "course-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/course-pages/:id",
+      "handler": "course-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/course-pages",
+      "handler": "course-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/course-pages/:id",
+      "handler": "course-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/course-pages/:id",
+      "handler": "course-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

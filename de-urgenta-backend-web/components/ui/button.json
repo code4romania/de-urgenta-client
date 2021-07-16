@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ui_buttons",
+  "info": {
+    "name": "button",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary"
+      ]
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

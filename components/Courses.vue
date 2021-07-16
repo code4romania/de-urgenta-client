@@ -28,10 +28,10 @@
     </div>
     <div class="mt-10">
       <router-link
-        to="/courses"
+        :to="button.href"
         class="inline-block bg-red-500 hover:bg-red-600 text-white p-2.5 pl-12 pr-12 rounded-md"
       >
-        <span>{{ button }}</span>
+        <span>{{ button.text }}</span>
         <img src="~/assets/icon-arrow.svg" class="inline-block ml-2.5" />
       </router-link>
     </div>
@@ -54,9 +54,13 @@ export default {
       required: true,
     },
     button: {
-      type: String,
+      type: Object,
       required: true,
     },
+  },
+  async asyncData({ $strapi }) {
+    const [page] = await $strapi.$pages.find({ slug: 'home' })
+    return { data: page }
   },
 }
 </script>

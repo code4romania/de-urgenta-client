@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_course_articles",
+  "info": {
+    "name": "article",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "address": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.button"
+    },
+    "provider": {
+      "model": "course-provider"
+    }
+  }
+}

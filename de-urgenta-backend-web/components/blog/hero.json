@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_heroes",
+  "info": {
+    "name": "hero",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "footer": {
+      "type": "string"
+    }
+  }
+}
