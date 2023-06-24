@@ -2,55 +2,56 @@
   <main>
     <section class="container mx-auto px-5 pt-10 md:pt-16">
       <Hero
-        title="Aici ar veni un header catchy pentru download singura aplicatie care"
-        description="Aici ar fi un alt text care sa imputerniceasca ce zice textul de mai sus si sa complementeze call to action-ul pentru downloading-ul aplicatiei. pwp."
+        title="Plan familial de urgență și educație pentru răspuns în caz de cutremur"
+        description="În cazul unui cutremur, majoritatea familiilor sau a grupurilor de prieteni care locuiesc în orașele vulnerabile, nu au pregătit un plan de urgență sau măcar un rucsac de supraviețuire care le-ar permite să aibă un minim de resurse în cazul unui dezastru. E timpul să îți pregătești familia pentru o situație de urgență. Descarcă aplicația."
         show-buttons
       />
     </section>
     <section class="container mx-auto px-5 mt-10 md:mt-16">
       <Feature
-        title="Transfer funds world-wide"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit."
+        title="Planul de salvare în trei pași"
         image="image-feature.svg"
         :list="[
           {
-            icon: 'icon-world.svg',
-            title: 'Competitive exchange rates',
+            icon: 'icon-backpack.svg',
+            title: 'Configurează-ți rucsacul',
             content:
-              'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+              'Vezi ce ai de pus în rucsac și desemnează responsabili pentru toate item-urile necesare.',
           },
           {
-            icon: 'icon-scale.svg',
-            title: 'No hidden fees',
+            icon: 'icon-location-pin.svg',
+            title: 'Setează-ți punctele de întâlnire',
             content:
-              'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+              'Configurează traseele de urmat de la școală, serviciu, casa părinților sau bunicilor către punctele de întâlnire.',
           },
           {
-            icon: 'icon-lightning.svg',
-            title: 'Transfers are instant',
+            icon: 'icon-first-aid-kit.svg',
+            title: 'Fă un curs de prim ajutor',
             content:
-              'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+              'Învață cum poți acorda primul ajutor în situații de urgență și ajută-i pe cei dragi să supraviețuiască.',
           },
         ]"
       />
     </section>
     <section class="container mx-auto px-5 mt-10 md:mt-16">
       <FeatureSecondary
-        title="Always in the loop"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
+        title="Pregătește-ți rucsacul de urgență"
+        description="De urgență te ajută să ții evidența produselor din rucsac și a termenelor lor de valabilitate."
         image="image-feature-secondary.svg"
         :list="[
           {
-            icon: 'icon-annotation.svg',
-            title: 'Competitive exchange rates',
+            icon: 'icon-backpack.svg',
+            title:
+              'Adaugă totul în rucsac și setează alerte pentru verificare produselor',
             content:
-              'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+              'Aplicația te ajută să nu îți lipsească nimic din rucsac și să te asiguri că știi la fiecare moment pe ce te poți baza.',
           },
           {
-            icon: 'icon-mail.svg',
-            title: 'No hidden fees',
+            icon: 'icon-asignee.svg',
+            title:
+              'Desemnează responsabili pentru fiecare produs pentru a consrtui obiceiuri sănătoase',
             content:
-              'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+              'E important ca toată lumea din familie să fie pregătită și să înțeleagă responsabilitățile care vin cu odată cu construirea unui plan de urgență.',
           },
         ]"
       />
@@ -59,7 +60,7 @@
       <div class="grid md:grid-cols-2 gap-10">
         <Courses
           title="Cursuri de prima ajutor"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
+          description="Cursurile de prim-ajutor trebuie făcute recurent pentru a fi mereu pregătit pentru orice situație în care vei avea nevoie de aceste skilluri. Vezi mai jos ce cursuri sunt disponibile și înscrie-te să participi la ele"
           :list="[
             {
               slug: '021-04-06',
@@ -90,9 +91,9 @@
           button="Vezi toate cursurile"
         />
         <Card
-          title="Esti autor de cursuri de prim ajutor? Do something"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
-          button="Call to action pt creatori"
+          title="Organizezi cursuri de prim-ajutor? Trimite-ne un mesaj!"
+          description="Dacă organizezi cursuri de prim ajutor te rugăm să ne ajuți să ținem evidența acestor cursuri cât mai actualizată pentru toți utilizatorii aplicației De Urgență. Dacă nu ești în platformă până acum, trimite-ne un mesaj apăsând butonul de mai jos."
+          :button="{ link: 'mailto:deurgenta@code4.ro', text: 'Trimite mesaj' }"
         />
       </div>
     </section>

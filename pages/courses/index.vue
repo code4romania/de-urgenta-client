@@ -17,7 +17,10 @@
             class="flex-wrap mt-16 md:mt-32"
             title="Esti autor de cursuri de prim ajutor? Do something"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo."
-            button="Call to action pt creatori"
+            :button="{
+              link: '#',
+              text: 'Call to action pt creatori',
+            }"
           />
         </div>
         <Courses
