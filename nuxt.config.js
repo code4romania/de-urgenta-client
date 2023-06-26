@@ -14,10 +14,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { propriety: 'og:type', content: 'website' },
-      { propriety: 'og:url', content: 'https://deurgenta.ro' },
-      { propriety: 'og:site_name', content: 'De Urgență' },
-      { propriety: 'og:title', content: 'De Urgență' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://deurgenta.ro' },
+      { property: 'og:site_name', content: 'De Urgență' },
+      { property: 'og:title', content: 'De Urgență' },
       {
         hid: 'description',
         name: 'description',
