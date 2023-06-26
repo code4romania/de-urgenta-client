@@ -11,7 +11,7 @@ export default {
     return {
       meta: [
         {
-          propriety: 'og:image',
+          property: 'og:image',
           content: `${this.$config.baseURL}/image-de-urgenta.png`,
         },
       ],
