@@ -2,7 +2,9 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   // Public env variables (accessible in client)
-  publicRuntimeConfig: { baseURL: process.env.NUXT_BASE_URL },
+  publicRuntimeConfig: {
+    baseURL: process.env.NUXT_BASE_URL || `https://${process.env.NUXT_ENV_VERCEL_URL}`
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'De Urgență',
