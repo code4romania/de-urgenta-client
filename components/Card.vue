@@ -11,10 +11,10 @@
       </p>
       <div class="mt-7">
         <a
-          href="#"
+          :href="button.link"
           class="inline-block bg-red-500 hover:bg-red-600 text-white p-2.5 pl-12 pr-12 rounded-md"
         >
-          <span>{{ button }}</span>
+          <span>{{ button.text }}</span>
           <img src="~/assets/icon-arrow.svg" class="inline-block" />
         </a>
       </div>
@@ -37,7 +37,7 @@ export default {
       required: true,
     },
     button: {
-      type: String,
+      type: Object,
       required: true,
     },
   },
