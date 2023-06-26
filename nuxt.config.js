@@ -1,19 +1,31 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  // Public env variables (accessible in client)
+  publicRuntimeConfig: {
+    baseURL: process.env.NUXT_BASE_URL || `https://${process.env.NUXT_ENV_VERCEL_URL}`
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'de-urgenta',
+    title: 'De Urgență',
     htmlAttrs: {
       lang: 'ro',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://deurgenta.ro' },
+      { property: 'og:site_name', content: 'De Urgență' },
+      { property: 'og:title', content: 'De Urgență' },
+      {
+        hid: 'description',
+        name: 'description',
+        property: 'og:description',
+        content:
+          'De urgență este o aplicație mobilă care te ajută să îți construiești un plan de urgență împreună cu cei apropiați, să ții evidența produselor din rucsac și a termenelor lor de valabilitate, oferă printr-un sistem de notificări și de puncte posibilitatea de a repeta informațiile cele mai utile în caz de cutremur sau altă calamitate și îți pune la dispoziție lista oficială a punctelor de întâlnire.',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
