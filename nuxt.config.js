@@ -48,12 +48,19 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/markdownit'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
   tailwindcss: {
     jit: true,
+  },
+
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true,
   },
 }
